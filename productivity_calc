@@ -1,0 +1,5 @@
+def prod_calc(sessions, productivity):
+	direct_minutes = sessions*30
+	indirect_minutes = ((direct_minutes*100) / productivity) - direct_minutes
+	
+	return indirect_minutes
